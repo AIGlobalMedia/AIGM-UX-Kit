@@ -1,0 +1,39 @@
+[data-animate][data-animate-ready] { animation: var(--animation) 1s; animation-fill-mode: forwards; animation-delay: .25s; }
+
+@media (prefers-reduced-motion) {
+    [data-animate] { animation: none !important; opacity: 1 !important; transition: none !important; }
+}
+
+[data-animate-off] [data-animate] {
+    animation: none !important; opacity: 1 !important; transition: none !important;
+}
+
+[data-animate="up"] { --animation: data-animate-up; transition: transform 1s ease, opacity 1s ease; opacity: 0; }
+@keyframes data-animate-up {
+    from { transform: translate(0, 65px); opacity: 0; }
+    to { transform: translate(0, 0); opacity: 1; }
+}
+
+[data-animate="down"] { --animation: data-animate-down; transition: transform 1s ease, opacity 1s ease; opacity: 0; }
+@keyframes data-animate-down {
+    from { transform: translate(0, -65px); opacity: 0; }
+    to { transform: translate(0, 0); opacity: 1; }
+}
+
+[data-animate="right"] { --animation: data-animate-right; transition: transform 1s ease, opacity 1s ease; opacity: 0; }
+@keyframes data-animate-right {
+    from { transform: translate(-65px, 0); opacity: 0; }
+    to { transform: translate(0, 0); opacity: 1; }
+}
+
+[data-animate="left"] { --animation: data-animate-left; transition: transform 1s ease, opacity 1s ease; opacity: 0; }
+@keyframes data-animate-left {
+    from { transform: translate(65px, 0); opacity: 0; }
+    to { transform: translate(0, 0); opacity: 1; }
+}
+
+[data-animate="zoom"] { --animation: data-animate-zoom; transition: transform 1s ease, opacity 1s ease; opacity: 0; }
+@keyframes data-animate-zoom {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
