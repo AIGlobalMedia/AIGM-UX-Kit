@@ -1,0 +1,12 @@
+[data-animate] {
+    opacity: 1;
+}
+
+noscript[data-aigm]::before {
+    content: "Hello visitor, please enable JavaScript in your browser to make this website work properly. Thank you.";
+    display: block;
+    text-align: center;
+    padding: 8px;
+    background: #ff4848;
+    color: #ffe7e7;
+}
