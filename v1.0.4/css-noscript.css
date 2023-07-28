@@ -1,0 +1,19 @@
+[data-animate] {
+    animation: none !important; 
+    opacity: 1 !important; 
+    transition: none !important;
+}
+
+noscript[data-aigm]::before {
+    content: "Hello visitor, please enable JavaScript in your browser to make this website work properly. Thank you.";
+    display: block;
+    text-align: center;
+    padding: 8px;
+    background: #ff4848;
+    color: #ffe7e7;
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
