@@ -772,8 +772,9 @@ nav.pagination .page-numbers {
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
-    width: 54px;
+    min-width: 54px;
     height: 54px;
+    padding: 0 16px;
 }
 
 nav.pagination .page-numbers.current {
