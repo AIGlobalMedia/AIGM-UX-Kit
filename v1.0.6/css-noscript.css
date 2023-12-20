@@ -1,0 +1,25 @@
+[data-animate] {
+    animation: none !important; 
+    opacity: 1 !important; 
+    transition: none !important;
+    visibility: visible !important;
+}
+
+noscript[data-aigm]::before {
+    content: "Hello visitor, please enable JavaScript in your browser to make this website work properly. Thank you.";
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background: linear-gradient(45deg, #c43030, #ff4848);
+    border-top: 1px solid #ff6464;
+    color: #ffffff;
+    z-index: 999999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1rem;
+    font-family: "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.58;
+}
