@@ -1111,35 +1111,6 @@ footer.aigm-footer .bar .socials a i {
     font-size: 1.4rem;
 }
 
-/* Cookie Banner (New + Old Support) */
-
-.cky-consent-container {
-    max-width: 514px !important;
-    width: 100% !important;
-}
-
-@media (max-width: 576px) {
-    .cky-consent-container {
-        width: 100% !important;
-        max-width: none !important;
-        border-radius: 0 !important;
-    }
-    .cky-consent-container .cky-consent-bar {
-        border-radius: 0 !important;
-    }
-}
-
-#cookie-law-info-bar[data-cli-type="widget"] {
-    width: 100% !important;
-    max-width: 500px !important; 
-    border-radius: 8px !important; 
-    box-shadow: 0 0 16px rgb(0 0 0 / 28%) !important; 
-}
-
-#cookie-law-info-bar .cli-bar-message {
-    font-size: 14.8px;
-}
-
 /* Extra */
 
 [data-page-load-indicator] {
